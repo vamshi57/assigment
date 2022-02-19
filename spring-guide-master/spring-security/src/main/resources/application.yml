@@ -1,0 +1,21 @@
+server:
+  port: 8085
+  
+
+
+spring:
+  
+  datasource: 
+     url: jdbc:postgresql://localhost:5432/postgres
+     username: psql1
+     password: psql1
+
+   
+
+  jpa: 
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+          enable_lazy_load_no_trans: true

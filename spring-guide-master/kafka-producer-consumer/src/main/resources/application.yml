@@ -1,0 +1,17 @@
+my:
+  kafka-tpc-name: my-spring
+server:
+  port: 9898
+  
+spring:
+  kafka:  
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group-id
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+ 
